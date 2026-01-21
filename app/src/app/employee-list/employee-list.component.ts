@@ -8,17 +8,19 @@ import { EmployeeService } from '../employee.service';
 })
 export class EmployeeListComponent implements OnInit {
 
-  public employees: any[] = [];
+  
 
-  constructor(private guru:EmployeeService)
-  {
+      public employees: any[] = [];
+      public customer:any[]=[];
+
+      constructor(private guru:EmployeeService,
+                  private sidd:EmployeeService)
+      {
+          
+      }
       
-  }
-
-
-ngOnInit() {
-  this.employees=this.guru.getEmployees();
-}
-
-
+      ngOnInit(): void {
+        this.employees=this.guru.getEmployees(); 
+        this.customer=this.sidd.getCustomer();
+      }
 }
