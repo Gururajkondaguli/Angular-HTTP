@@ -6,16 +6,21 @@ import { ChildComponent } from './child/child.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { EmployeeService } from './employee.service';
 import { DriverComponent } from './driver/driver.component';
+import { HttpComponent } from './http/http.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     ChildComponent,
     EmployeeListComponent,
-    DriverComponent
+    DriverComponent,
+    HttpComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [EmployeeService],
   bootstrap: [AppComponent]

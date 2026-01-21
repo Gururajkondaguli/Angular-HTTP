@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Rahul",
+    "age": 25,
+    "department": "IT",
+    "salary": 50000
+  },
+  {
+    "id": 2,
+    "name": "Anita",
+    "age": 28,
+    "department": "HR",
+    "salary": 42000
+  },
+  {
+    "id": 3,
+    "name": "Suresh",
+    "age": 32,
+    "department": "Finance",
+    "salary": 60000
+  },
+  {
+    "id": 4,
+    "name": "Priya",
+    "age": 24,
+    "department": "Marketing",
+    "salary": 38000
+  },
+  {
+    "id": 5,
+    "name": "Vikram",
+    "age": 35,
+    "department": "IT",
+    "salary": 55000
+  }
+]

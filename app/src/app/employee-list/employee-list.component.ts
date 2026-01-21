@@ -20,7 +20,7 @@ export class EmployeeListComponent implements OnInit {
       }
       
       ngOnInit(): void {
-        this.employees=this.guru.getEmployees(); 
+         
         this.customer=this.sidd.getCustomer();
       }
 }

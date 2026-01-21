@@ -9,8 +9,15 @@ import { EmployeeService } from '../employee.service';
 export class DriverComponent implements OnInit {
 
   public Riders:any []=[];
+  public Park:any []=[];
+  public AirPorts:any []=[];
 
-  constructor(public Attu:EmployeeService)
+  public Station:any[]=[]
+
+  constructor(public Attu:EmployeeService,
+              public Parshu:EmployeeService,
+              public Harshu:EmployeeService,
+              public Ritesh:EmployeeService)
   {
 
   }
@@ -18,6 +25,9 @@ export class DriverComponent implements OnInit {
   ngOnInit():void
   {
     this.Riders=this.Attu.getDriver();
+    this.Park=this.Parshu.getVehicles();
+    this.AirPorts=this.Harshu.getFlights();
+    this.Station=this.Ritesh.getTrains();
   }
 
 }
